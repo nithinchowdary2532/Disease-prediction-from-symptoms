@@ -39,7 +39,6 @@ if __name__ == '__main__':
 
     with open('./saved_model/random_forest.joblib', 'rb') as f:
         loaded_object = pickle.load(f)
-
         if hasattr(loaded_object, 'predict'):
             result = loaded_object.predict(df_test)
             print(f"Predicted Disease: {result}")
