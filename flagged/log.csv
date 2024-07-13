@@ -1,0 +1,6 @@
+symptom_list,output,flag,username,timestamp
+"['skin_rash', 'nodal_skin_eruptions', 'continuous_sneezing']",,,,2024-07-08 00:36:22.303529
+"[""mild_fever"", ""yellow_urine"", ""headache"", ""yellowing_of_eyes"", ""swelling_of_stomach""]",GERD,,,2024-07-08 01:30:47.697107
+"[""continuous_sneezing"", ""stomach_pain"", ""chills"", ""muscle_wasting"", ""joint_pain"", ""vomiting"", ""bladder_discomfort""]",Osteoarthristis,,,2024-07-08 04:10:26.478368
+"[""continuous_sneezing"", ""stomach_pain"", ""chills"", ""muscle_wasting"", ""joint_pain"", ""vomiting"", ""bladder_discomfort""]",Osteoarthristis,,,2024-07-08 04:10:35.049598
+"[""continuous_sneezing"", ""stomach_pain"", ""chills"", ""muscle_wasting"", ""joint_pain"", ""vomiting"", ""bladder_discomfort"", ""sweating"", ""constipation""]",Heart attack,,,2024-07-08 04:10:54.335110
