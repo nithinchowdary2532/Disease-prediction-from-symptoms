@@ -16,7 +16,7 @@ class DiseasePrediction:
         self.model_save_path=None  # Set to None initially
 
         try:
-            with open('./config.yaml', 'r') as f:
+            with open('./config.yaml', 'r') as f:   
                 self.config=yaml.safe_load(f)
                 self.verbose=self.config.get('verbose', False)
                 self.model_save_path=self.config.get('model_save_path')
