@@ -9,7 +9,7 @@ from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
 import seaborn as sn
 import matplotlib.pyplot as plt
 
-class DiseasePrediction:
+class  DiseasePrediction:
     def __init__(self, model_name=None):
         self.verbose=False  # Default to False if config loading fails
         self.model_name=model_name
