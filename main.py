@@ -9,14 +9,14 @@ from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
 import seaborn as sn
 import matplotlib.pyplot as plt
 
-class DiseasePrediction:
+class  DiseasePrediction:
     def __init__(self, model_name=None):
         self.verbose=False  # Default to False if config loading fails
         self.model_name=model_name
         self.model_save_path=None  # Set to None initially
 
         try:
-            with open('./config.yaml', 'r') as f:
+            with open('./config.yaml', 'r') as f:   
                 self.config=yaml.safe_load(f)
                 self.verbose=self.config.get('verbose', False)
                 self.model_save_path=self.config.get('model_save_path')
