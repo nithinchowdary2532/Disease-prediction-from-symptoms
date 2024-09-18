@@ -31,26 +31,26 @@ class  DiseasePrediction:
         else:
             print("Config not loaded successfully. Check your config file and paths.")
 
-    def _load_train_dataset(self):
+    def _load_train_dataset(self):     
         df_train=pd.read_csv(self.config['dataset']['training_data_path'])
         cols=df_train.columns[:-2]  # Simplified assignment
         train_features=df_train[cols]
         train_labels=df_train['prognosis']
 
         assert len(train_features.iloc[0])==132
-        assert len(train_labels)==train_features.shape[0]
+        assert len(train_labels)==train_features.shape[0]     
 
         if self.verbose:
             print("Length of Training Data:",df_train.shape)
             print("Training Features:",train_features.shape)
-            print("Training Labels:",train_labels.shape)
+            print("Training Labels:",train_labels.shape)     
         return train_features,train_labels,df_train
 
     def _load_test_dataset(self):
-        df_test=pd.read_csv(self.config['dataset']['test_data_path'])
-        cols=df_test.columns[:-1]  # Simplified assignment
+        df_test=pd.read_csv(self.config['dataset']['test_data_path'])    
+        cols=df_test.columns[:-1]  # Simplified assignment     
         test_features=df_test[cols]
-        test_labels=df_test['prognosis']
+        test_labels=df_test['prognosis']      
 
         assert len(test_features.iloc[0])==132
         assert len(test_labels)==test_features.shape[0]
